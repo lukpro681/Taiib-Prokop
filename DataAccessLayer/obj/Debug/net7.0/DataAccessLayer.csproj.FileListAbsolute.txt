@@ -1,0 +1,17 @@
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.deps.json
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.runtimeconfig.json
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.dll
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\bin\Debug\net7.0\DataAccessLayer.pdb
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\bin\Debug\net7.0\WebApiModels.dll
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\bin\Debug\net7.0\WebApiModels.pdb
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfo.cs
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CopyComplete
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.dll
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\refint\DataAccessLayer.dll
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.pdb
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.genruntimeconfig.cache
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\ref\DataAccessLayer.dll

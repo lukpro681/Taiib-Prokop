@@ -1,0 +1,14 @@
+D:\DevHomeRepos\Taiib-Prokop\WebApiModels\bin\Debug\net7.0\WebApiModels.deps.json
+D:\DevHomeRepos\Taiib-Prokop\WebApiModels\bin\Debug\net7.0\WebApiModels.runtimeconfig.json
+D:\DevHomeRepos\Taiib-Prokop\WebApiModels\bin\Debug\net7.0\WebApiModels.dll
+D:\DevHomeRepos\Taiib-Prokop\WebApiModels\bin\Debug\net7.0\WebApiModels.pdb
+D:\DevHomeRepos\Taiib-Prokop\WebApiModels\obj\Debug\net7.0\WebApiModels.csproj.AssemblyReference.cache
+D:\DevHomeRepos\Taiib-Prokop\WebApiModels\obj\Debug\net7.0\WebApiModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevHomeRepos\Taiib-Prokop\WebApiModels\obj\Debug\net7.0\WebApiModels.AssemblyInfoInputs.cache
+D:\DevHomeRepos\Taiib-Prokop\WebApiModels\obj\Debug\net7.0\WebApiModels.AssemblyInfo.cs
+D:\DevHomeRepos\Taiib-Prokop\WebApiModels\obj\Debug\net7.0\WebApiModels.csproj.CoreCompileInputs.cache
+D:\DevHomeRepos\Taiib-Prokop\WebApiModels\obj\Debug\net7.0\WebApiModels.dll
+D:\DevHomeRepos\Taiib-Prokop\WebApiModels\obj\Debug\net7.0\refint\WebApiModels.dll
+D:\DevHomeRepos\Taiib-Prokop\WebApiModels\obj\Debug\net7.0\WebApiModels.pdb
+D:\DevHomeRepos\Taiib-Prokop\WebApiModels\obj\Debug\net7.0\WebApiModels.genruntimeconfig.cache
+D:\DevHomeRepos\Taiib-Prokop\WebApiModels\obj\Debug\net7.0\ref\WebApiModels.dll
