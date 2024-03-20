@@ -15,12 +15,12 @@ namespace WebApiModels
         [Key]
         public int Id { get; set; }
 
-        public int ProductID { get; set; }
+        public required int ProductID { get; set; }
         [ForeignKey(nameof(ProductID))]
-        public Product Product { get; set; }
-        public int UserID { get; set; }
+        public required Product Product { get; set; }
+        public required int UserID { get; set; }
         [ForeignKey(nameof(UserID))]
-        public User User { get; set; }
+        public required User User { get; set; }
         public required int Amount { get; set; }
 
         public void Configure(EntityTypeBuilder<BasketPosition> builder)

@@ -21,13 +21,19 @@ namespace WebApiModels
         public required int Amount { get; set; }
         public required double Price { get; set; }
 
+        public required IEnumerable<Product> products { get; set; }
+
         public void Configure(EntityTypeBuilder<OrderPosition> builder)
         {
             builder
                 .HasOne(x => x.Order)
                 .WithMany(x => x.OrderPositions)
                 .OnDelete(DeleteBehavior.Cascade);
-                
+            builder
+                .HasMany(x => x.products)
+                .WithOne(x => x.orderPosition)
+                .OnDelete(DeleteBehavior.Cascade);
+
         }
     }
 }

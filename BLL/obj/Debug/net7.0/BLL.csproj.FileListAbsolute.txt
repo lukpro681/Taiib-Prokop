@@ -1,0 +1,12 @@
+D:\DevHomeRepos\Taiib-Prokop\BLL\bin\Debug\net7.0\BLL.deps.json
+D:\DevHomeRepos\Taiib-Prokop\BLL\bin\Debug\net7.0\BLL.dll
+D:\DevHomeRepos\Taiib-Prokop\BLL\bin\Debug\net7.0\BLL.pdb
+D:\DevHomeRepos\Taiib-Prokop\BLL\obj\Debug\net7.0\BLL.csproj.AssemblyReference.cache
+D:\DevHomeRepos\Taiib-Prokop\BLL\obj\Debug\net7.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\DevHomeRepos\Taiib-Prokop\BLL\obj\Debug\net7.0\BLL.AssemblyInfoInputs.cache
+D:\DevHomeRepos\Taiib-Prokop\BLL\obj\Debug\net7.0\BLL.AssemblyInfo.cs
+D:\DevHomeRepos\Taiib-Prokop\BLL\obj\Debug\net7.0\BLL.csproj.CoreCompileInputs.cache
+D:\DevHomeRepos\Taiib-Prokop\BLL\obj\Debug\net7.0\BLL.dll
+D:\DevHomeRepos\Taiib-Prokop\BLL\obj\Debug\net7.0\refint\BLL.dll
+D:\DevHomeRepos\Taiib-Prokop\BLL\obj\Debug\net7.0\BLL.pdb
+D:\DevHomeRepos\Taiib-Prokop\BLL\obj\Debug\net7.0\ref\BLL.dll

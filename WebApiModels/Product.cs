@@ -19,11 +19,17 @@ namespace WebApiModels
         public required bool isActive { get; set; }
         public IEnumerable<BasketPosition> basketPositions { get; set; }
 
+        public required OrderPosition orderPosition { get; set; }
+
         public void Configure(EntityTypeBuilder<Product> builder)
         {
             builder
                 .HasMany(x => x.basketPositions)
                 .WithOne(x => x.Product)
+                .OnDelete(DeleteBehavior.Cascade);
+            builder
+                .HasOne(x => x.orderPosition)
+                .WithMany(x => x.products)
                 .OnDelete(DeleteBehavior.Cascade);
         }
     }

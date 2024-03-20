@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(ShopContext))]
-    [Migration("20240313104716_InitialD")]
-    partial class InitialD
+    [Migration("20240320122154_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -117,7 +117,12 @@ namespace DataAccessLayer.Migrations
                     b.Property<bool>("isActive")
                         .HasColumnType("bit");
 
+                    b.Property<int>("orderPositionId")
+                        .HasColumnType("int");
+
                     b.HasKey("ID");
+
+                    b.HasIndex("orderPositionId");
 
                     b.ToTable("Products");
                 });
@@ -190,9 +195,25 @@ namespace DataAccessLayer.Migrations
                     b.Navigation("Order");
                 });
 
+            modelBuilder.Entity("WebApiModels.Product", b =>
+                {
+                    b.HasOne("WebApiModels.OrderPosition", "orderPosition")
+                        .WithMany("products")
+                        .HasForeignKey("orderPositionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("orderPosition");
+                });
+
             modelBuilder.Entity("WebApiModels.Order", b =>
                 {
                     b.Navigation("OrderPositions");
+                });
+
+            modelBuilder.Entity("WebApiModels.OrderPosition", b =>
+                {
+                    b.Navigation("products");
                 });
 
             modelBuilder.Entity("WebApiModels.Product", b =>
