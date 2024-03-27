@@ -10,6 +10,7 @@ namespace BLL
     {
         Task AddProduct(int userId, int productId, int amount);
         Task RemoveProduct(int productId, int userId);
+        Task RemoveAllProducts(int userId);
         Task EditProductAmount(int userId, int productId, int amount);
         Task<IEnumerable<BasketPositionDTO>> GetBasketContents(int userId);
 

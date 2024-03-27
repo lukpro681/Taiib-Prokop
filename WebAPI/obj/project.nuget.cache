@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "C2cT4JbVFlAe2i1B4aiHSk5KII7U6+nYV/EzZpt/WpY5GGjf4HaHlGZciDZleWroorLdqQqAHn56ABLsdjeZBw==",
+  "dgSpecHash": "nuYVcBQ/puwGT/TLGLcqQoislwBw4Zm3vs2ISq5Zl+/3G1yGNspCPV/I9r94AMCfYFPBCnOtZ6ny+cqU9IWRyw==",
   "success": true,
   "projectFilePath": "D:\\DevHomeRepos\\Taiib-Prokop\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lukus\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\lukus\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\lukus\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
-    "C:\\Users\\lukus\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\lukus\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\lukus\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\lukus\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",
     "C:\\Users\\lukus\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.1\\microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512",
