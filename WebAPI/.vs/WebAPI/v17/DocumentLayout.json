@@ -1,0 +1,476 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DevHomeRepos\\Taiib-Prokop\\WebAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{776C73B5-635B-41C5-AB2F-8E536FF9F183}|..\\WebApiModels\\WebApiModels.csproj|d:\\devhomerepos\\taiib-prokop\\webapimodels\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB6A4FB-5C03-46B5-883F-EAB4B499A673}|..\\BLL\\BLL.csproj|d:\\devhomerepos\\taiib-prokop\\bll\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB6A4FB-5C03-46B5-883F-EAB4B499A673}|..\\BLL\\BLL.csproj|d:\\devhomerepos\\taiib-prokop\\bll\\basketpositiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB6A4FB-5C03-46B5-883F-EAB4B499A673}|..\\BLL\\BLL.csproj|d:\\devhomerepos\\taiib-prokop\\bll\\productfiltercriteria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB6A4FB-5C03-46B5-883F-EAB4B499A673}|..\\BLL\\BLL.csproj|d:\\devhomerepos\\taiib-prokop\\bll\\orderpositiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB6A4FB-5C03-46B5-883F-EAB4B499A673}|..\\BLL\\BLL.csproj|d:\\devhomerepos\\taiib-prokop\\bll\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB6A4FB-5C03-46B5-883F-EAB4B499A673}|..\\BLL\\BLL.csproj|d:\\devhomerepos\\taiib-prokop\\bll\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE26E49D-23B1-46AC-8CC2-713F1727CBA3}|..\\BLL_EF\\BLL_EF.csproj|d:\\devhomerepos\\taiib-prokop\\bll_ef\\basketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE26E49D-23B1-46AC-8CC2-713F1727CBA3}|..\\BLL_EF\\BLL_EF.csproj|d:\\devhomerepos\\taiib-prokop\\bll_ef\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE26E49D-23B1-46AC-8CC2-713F1727CBA3}|..\\BLL_EF\\BLL_EF.csproj|d:\\devhomerepos\\taiib-prokop\\bll_ef\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB6A4FB-5C03-46B5-883F-EAB4B499A673}|..\\BLL\\BLL.csproj|d:\\devhomerepos\\taiib-prokop\\bll\\ibasketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA0F40C-E8F0-4589-94DA-66C5AA6E9E0A}|WebAPI.csproj|d:\\devhomerepos\\taiib-prokop\\webapi\\controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA0F40C-E8F0-4589-94DA-66C5AA6E9E0A}|WebAPI.csproj|solutionrelative:controllers\\basketcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA0F40C-E8F0-4589-94DA-66C5AA6E9E0A}|WebAPI.csproj|d:\\devhomerepos\\taiib-prokop\\webapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA0F40C-E8F0-4589-94DA-66C5AA6E9E0A}|WebAPI.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA0F40C-E8F0-4589-94DA-66C5AA6E9E0A}|WebAPI.csproj|d:\\devhomerepos\\taiib-prokop\\webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA0F40C-E8F0-4589-94DA-66C5AA6E9E0A}|WebAPI.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA0F40C-E8F0-4589-94DA-66C5AA6E9E0A}|WebAPI.csproj|d:\\devhomerepos\\taiib-prokop\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA0F40C-E8F0-4589-94DA-66C5AA6E9E0A}|WebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB6A4FB-5C03-46B5-883F-EAB4B499A673}|..\\BLL\\BLL.csproj|d:\\devhomerepos\\taiib-prokop\\bll\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB6A4FB-5C03-46B5-883F-EAB4B499A673}|..\\BLL\\BLL.csproj|d:\\devhomerepos\\taiib-prokop\\bll\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA0F40C-E8F0-4589-94DA-66C5AA6E9E0A}|WebAPI.csproj|d:\\devhomerepos\\taiib-prokop\\webapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA0F40C-E8F0-4589-94DA-66C5AA6E9E0A}|WebAPI.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{776C73B5-635B-41C5-AB2F-8E536FF9F183}|..\\WebApiModels\\WebApiModels.csproj|d:\\devhomerepos\\taiib-prokop\\webapimodels\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDB6A4FB-5C03-46B5-883F-EAB4B499A673}|..\\BLL\\BLL.csproj|d:\\devhomerepos\\taiib-prokop\\bll\\bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE26E49D-23B1-46AC-8CC2-713F1727CBA3}|..\\BLL_EF\\BLL_EF.csproj|d:\\devhomerepos\\taiib-prokop\\bll_ef\\bll_ef.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6C5700-007B-4D0B-8A05-BB559AB9E886}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\devhomerepos\\taiib-prokop\\dataaccesslayer\\dataaccesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{776C73B5-635B-41C5-AB2F-8E536FF9F183}|..\\WebApiModels\\WebApiModels.csproj|d:\\devhomerepos\\taiib-prokop\\webapimodels\\basketposition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{776C73B5-635B-41C5-AB2F-8E536FF9F183}|..\\WebApiModels\\WebApiModels.csproj|d:\\devhomerepos\\taiib-prokop\\webapimodels\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6C5700-007B-4D0B-8A05-BB559AB9E886}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\devhomerepos\\taiib-prokop\\dataaccesslayer\\migrations\\20240320122154_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF6C5700-007B-4D0B-8A05-BB559AB9E886}|..\\DataAccessLayer\\DataAccessLayer.csproj|d:\\devhomerepos\\taiib-prokop\\dataaccesslayer\\shopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA0F40C-E8F0-4589-94DA-66C5AA6E9E0A}|WebAPI.csproj|d:\\devhomerepos\\taiib-prokop\\webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9FA0F40C-E8F0-4589-94DA-66C5AA6E9E0A}|WebAPI.csproj|solutionrelative:webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{776C73B5-635B-41C5-AB2F-8E536FF9F183}|..\\WebApiModels\\WebApiModels.csproj|d:\\devhomerepos\\taiib-prokop\\webapimodels\\webapimodels.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA0F40C-E8F0-4589-94DA-66C5AA6E9E0A}|WebAPI.csproj|d:\\devhomerepos\\taiib-prokop\\webapi\\webapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{9FA0F40C-E8F0-4589-94DA-66C5AA6E9E0A}|WebAPI.csproj|solutionrelative:webapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{776C73B5-635B-41C5-AB2F-8E536FF9F183}|..\\WebApiModels\\WebApiModels.csproj|d:\\devhomerepos\\taiib-prokop\\webapimodels\\webapimodels.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IBasketService.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\IBasketService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\IBasketService.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\IBasketService.cs",
+              "RelativeToolTip": "..\\BLL\\IBasketService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T12:58:44.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BasketService.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL_EF\\BasketService.cs",
+              "RelativeDocumentMoniker": "..\\BLL_EF\\BasketService.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL_EF\\BasketService.cs",
+              "RelativeToolTip": "..\\BLL_EF\\BasketService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T09:07:46.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL_EF\\OrderService.cs",
+              "RelativeDocumentMoniker": "..\\BLL_EF\\OrderService.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL_EF\\OrderService.cs",
+              "RelativeToolTip": "..\\BLL_EF\\OrderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T09:06:57.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL_EF\\ProductService.cs",
+              "RelativeDocumentMoniker": "..\\BLL_EF\\ProductService.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL_EF\\ProductService.cs",
+              "RelativeToolTip": "..\\BLL_EF\\ProductService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T08:54:40.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderDTO.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\OrderDTO.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\OrderDTO.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\OrderDTO.cs",
+              "RelativeToolTip": "..\\BLL\\OrderDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T12:42:55.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BasketPositionDTO.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\BasketPositionDTO.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\BasketPositionDTO.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\BasketPositionDTO.cs",
+              "RelativeToolTip": "..\\BLL\\BasketPositionDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T12:50:31.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderPositionDTO.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\OrderPositionDTO.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\OrderPositionDTO.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\OrderPositionDTO.cs",
+              "RelativeToolTip": "..\\BLL\\OrderPositionDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T12:47:58.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\ProductDTO.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\ProductDTO.cs",
+              "RelativeToolTip": "..\\BLL\\ProductDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T12:01:31.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\UserDTO.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\UserDTO.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\UserDTO.cs",
+              "RelativeToolTip": "..\\BLL\\UserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T12:50:19.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductFilterCriteria.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\ProductFilterCriteria.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\ProductFilterCriteria.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\ProductFilterCriteria.cs",
+              "RelativeToolTip": "..\\BLL\\ProductFilterCriteria.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T12:34:58.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\WebApiModels\\User.cs",
+              "RelativeDocumentMoniker": "..\\WebApiModels\\User.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\WebApiModels\\User.cs",
+              "RelativeToolTip": "..\\WebApiModels\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T08:57:48.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BasketController.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\WebAPI\\Controllers\\BasketController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BasketController.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\WebAPI\\Controllers\\BasketController.cs",
+              "RelativeToolTip": "Controllers\\BasketController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T10:22:18.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\WebAPI\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\WebAPI\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "Controllers\\OrderController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFwAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T10:24:40.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\WebAPI\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\WebAPI\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T10:11:46.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\WebAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T09:48:34.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\WebAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\WebAPI\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T10:11:19.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\IOrderService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\IOrderService.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\IOrderService.cs",
+              "RelativeToolTip": "..\\BLL\\IOrderService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T13:12:07.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\IProductService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\IProductService.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\IProductService.cs",
+              "RelativeToolTip": "..\\BLL\\IProductService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T12:32:55.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\WebApiModels\\Order.cs",
+              "RelativeDocumentMoniker": "..\\WebApiModels\\Order.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\WebApiModels\\Order.cs",
+              "RelativeToolTip": "..\\WebApiModels\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T10:44:18.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BLL_EF.csproj",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL_EF\\BLL_EF.csproj",
+              "RelativeDocumentMoniker": "..\\BLL_EF\\BLL_EF.csproj",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL_EF\\BLL_EF.csproj",
+              "RelativeToolTip": "..\\BLL_EF\\BLL_EF.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-27T09:03:03.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BLL.csproj",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\BLL.csproj",
+              "RelativeDocumentMoniker": "..\\BLL\\BLL.csproj",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\BLL.csproj",
+              "RelativeToolTip": "..\\BLL\\BLL.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-20T12:32:14.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DataAccessLayer.csproj",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeDocumentMoniker": "..\\DataAccessLayer\\DataAccessLayer.csproj",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\DataAccessLayer\\DataAccessLayer.csproj",
+              "RelativeToolTip": "..\\DataAccessLayer\\DataAccessLayer.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-13T09:34:00.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BasketPosition.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\WebApiModels\\BasketPosition.cs",
+              "RelativeDocumentMoniker": "..\\WebApiModels\\BasketPosition.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\WebApiModels\\BasketPosition.cs",
+              "RelativeToolTip": "..\\WebApiModels\\BasketPosition.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAkwCQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T09:07:11.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\WebApiModels\\Product.cs",
+              "RelativeDocumentMoniker": "..\\WebApiModels\\Product.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\WebApiModels\\Product.cs",
+              "RelativeToolTip": "..\\WebApiModels\\Product.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T09:06:49.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20240320122154_init.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\DataAccessLayer\\Migrations\\20240320122154_init.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessLayer\\Migrations\\20240320122154_init.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\DataAccessLayer\\Migrations\\20240320122154_init.cs",
+              "RelativeToolTip": "..\\DataAccessLayer\\Migrations\\20240320122154_init.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAgwG0AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T12:21:54.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ShopContext.cs",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\DataAccessLayer\\ShopContext.cs",
+              "RelativeDocumentMoniker": "..\\DataAccessLayer\\ShopContext.cs",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\DataAccessLayer\\ShopContext.cs",
+              "RelativeToolTip": "..\\DataAccessLayer\\ShopContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T09:33:52.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "WebApiModels.csproj",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\WebApiModels\\WebApiModels.csproj",
+              "RelativeDocumentMoniker": "..\\WebApiModels\\WebApiModels.csproj",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\WebApiModels\\WebApiModels.csproj",
+              "RelativeToolTip": "..\\WebApiModels\\WebApiModels.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-13T09:22:00.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "WebAPI.csproj",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\WebAPI\\WebAPI.csproj",
+              "RelativeDocumentMoniker": "WebAPI.csproj",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\WebAPI\\WebAPI.csproj",
+              "RelativeToolTip": "WebAPI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-13T08:54:08.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "WebAPI",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\WebAPI\\WebAPI.csproj",
+              "RelativeDocumentMoniker": "WebAPI.csproj",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\WebAPI\\WebAPI.csproj",
+              "RelativeToolTip": "WebAPI.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-13T09:20:10.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "WebApiModels",
+              "DocumentMoniker": "D:\\DevHomeRepos\\Taiib-Prokop\\WebApiModels\\WebApiModels.csproj",
+              "RelativeDocumentMoniker": "..\\WebApiModels\\WebApiModels.csproj",
+              "ToolTip": "D:\\DevHomeRepos\\Taiib-Prokop\\WebApiModels\\WebApiModels.csproj",
+              "RelativeToolTip": "..\\WebApiModels\\WebApiModels.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-13T09:22:03.151Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -67,7 +67,6 @@ D:\DevHomeRepos\Taiib-Prokop\WebAPI\obj\Debug\net7.0\staticwebassets.pack.json
 D:\DevHomeRepos\Taiib-Prokop\WebAPI\obj\Debug\net7.0\staticwebassets.build.json
 D:\DevHomeRepos\Taiib-Prokop\WebAPI\obj\Debug\net7.0\staticwebassets.development.json
 D:\DevHomeRepos\Taiib-Prokop\WebAPI\obj\Debug\net7.0\scopedcss\bundle\WebAPI.styles.css
-D:\DevHomeRepos\Taiib-Prokop\WebAPI\obj\Debug\net7.0\WebAPI.csproj.CopyComplete
 D:\DevHomeRepos\Taiib-Prokop\WebAPI\obj\Debug\net7.0\WebAPI.dll
 D:\DevHomeRepos\Taiib-Prokop\WebAPI\obj\Debug\net7.0\refint\WebAPI.dll
 D:\DevHomeRepos\Taiib-Prokop\WebAPI\obj\Debug\net7.0\WebAPI.pdb
@@ -77,3 +76,9 @@ D:\DevHomeRepos\Taiib-Prokop\WebAPI\bin\Debug\net7.0\DataAccessLayer.dll
 D:\DevHomeRepos\Taiib-Prokop\WebAPI\bin\Debug\net7.0\WebApiModels.dll
 D:\DevHomeRepos\Taiib-Prokop\WebAPI\bin\Debug\net7.0\DataAccessLayer.pdb
 D:\DevHomeRepos\Taiib-Prokop\WebAPI\bin\Debug\net7.0\WebApiModels.pdb
+D:\DevHomeRepos\Taiib-Prokop\WebAPI\obj\Debug\net7.0\WebAPI.sourcelink.json
+D:\DevHomeRepos\Taiib-Prokop\WebAPI\bin\Debug\net7.0\BLL.dll
+D:\DevHomeRepos\Taiib-Prokop\WebAPI\bin\Debug\net7.0\BLL.pdb
+D:\DevHomeRepos\Taiib-Prokop\WebAPI\obj\Debug\net7.0\WebAPI.csproj.Up2Date
+D:\DevHomeRepos\Taiib-Prokop\WebAPI\bin\Debug\net7.0\BLL_EF.dll
+D:\DevHomeRepos\Taiib-Prokop\WebAPI\bin\Debug\net7.0\BLL_EF.pdb

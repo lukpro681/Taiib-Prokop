@@ -10,3 +10,6 @@ D:\DevHomeRepos\Taiib-Prokop\BLL\obj\Debug\net7.0\BLL.dll
 D:\DevHomeRepos\Taiib-Prokop\BLL\obj\Debug\net7.0\refint\BLL.dll
 D:\DevHomeRepos\Taiib-Prokop\BLL\obj\Debug\net7.0\BLL.pdb
 D:\DevHomeRepos\Taiib-Prokop\BLL\obj\Debug\net7.0\ref\BLL.dll
+D:\DevHomeRepos\Taiib-Prokop\BLL\bin\Debug\net7.0\BLL.runtimeconfig.json
+D:\DevHomeRepos\Taiib-Prokop\BLL\obj\Debug\net7.0\BLL.sourcelink.json
+D:\DevHomeRepos\Taiib-Prokop\BLL\obj\Debug\net7.0\BLL.genruntimeconfig.cache

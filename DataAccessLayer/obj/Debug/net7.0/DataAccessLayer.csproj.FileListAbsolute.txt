@@ -9,9 +9,10 @@ D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.Ge
 D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfoInputs.cache
 D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.AssemblyInfo.cs
 D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CoreCompileInputs.cache
-D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.csproj.CopyComplete
 D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.dll
 D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\refint\DataAccessLayer.dll
 D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.pdb
 D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.genruntimeconfig.cache
 D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\ref\DataAccessLayer.dll
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAccessLayer.sourcelink.json
+D:\DevHomeRepos\Taiib-Prokop\DataAccessLayer\obj\Debug\net7.0\DataAcce.E67BD773.Up2Date

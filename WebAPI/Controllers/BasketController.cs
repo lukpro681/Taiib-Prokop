@@ -69,9 +69,9 @@ namespace WebAPI.Controllers
                 return BadRequest($"Error removing product from basket: {ex.Message}");
             }
         }
-        public IActionResult Index()
+/*        public IActionResult Index()
         {
             return View();
-        }
+        }*/
     }
 }

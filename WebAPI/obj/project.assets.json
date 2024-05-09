@@ -1182,6 +1182,21 @@
           "bin/placeholder/BLL.dll": {}
         }
       },
+      "BLL_EF/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "BLL": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.17",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.17"
+        },
+        "compile": {
+          "bin/placeholder/BLL_EF.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BLL_EF.dll": {}
+        }
+      },
       "DataAccessLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -3431,6 +3446,11 @@
       "path": "../BLL/BLL.csproj",
       "msbuildProject": "../BLL/BLL.csproj"
     },
+    "BLL_EF/1.0.0": {
+      "type": "project",
+      "path": "../BLL_EF/BLL_EF.csproj",
+      "msbuildProject": "../BLL_EF/BLL_EF.csproj"
+    },
     "DataAccessLayer/1.0.0": {
       "type": "project",
       "path": "../DataAccessLayer/DataAccessLayer.csproj",
@@ -3445,6 +3465,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "BLL >= 1.0.0",
+      "BLL_EF >= 1.0.0",
       "DataAccessLayer >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.17",
       "Microsoft.EntityFrameworkCore.Abstractions >= 7.0.17",
@@ -3482,7 +3503,6 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3491,6 +3511,9 @@
           "projectReferences": {
             "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\BLL.csproj": {
               "projectPath": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\BLL.csproj"
+            },
+            "D:\\DevHomeRepos\\Taiib-Prokop\\BLL_EF\\BLL_EF.csproj": {
+              "projectPath": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL_EF\\BLL_EF.csproj"
             },
             "D:\\DevHomeRepos\\Taiib-Prokop\\DataAccessLayer\\DataAccessLayer.csproj": {
               "projectPath": "D:\\DevHomeRepos\\Taiib-Prokop\\DataAccessLayer\\DataAccessLayer.csproj"
@@ -3502,6 +3525,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3560,7 +3588,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

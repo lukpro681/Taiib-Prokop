@@ -87,10 +87,10 @@ namespace WebAPI.Controllers
                 return BadRequest($"Error retrieving order positions: {ex.Message}");
             }
         }
-        public IActionResult Index()
+/*        public IActionResult Index()
         {
             return View();
-        }
+        }*/
     }
 
 }

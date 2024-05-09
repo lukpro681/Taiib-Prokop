@@ -96,9 +96,9 @@ namespace WebAPI.Controllers
             }
         }
 
-        public IActionResult Index()
+/*        public IActionResult Index()
         {
             return View();
-        }
+        }*/
     }
 }
