@@ -19,13 +19,13 @@ export class ProductsComponent{
 
   private loadData() : void {
     {
-      this.productService.getProducts().subscribe({
-        next: (res) => {
-          res;
-        },
-        error: (err) => console.error(err),
-        complete: () => console.log('complete')
-      });
+      // this.productService.getProducts().subscribe({
+      //   next: (res) => {
+      //     res;
+      //   },
+      //   error: (err) => console.error(err),
+      //   complete: () => console.log('complete')
+      // });
     }
   }
 }

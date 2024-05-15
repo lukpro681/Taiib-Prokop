@@ -116,6 +116,12 @@
             "projectReferences": {
               "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\BLL.csproj": {
                 "projectPath": "D:\\DevHomeRepos\\Taiib-Prokop\\BLL\\BLL.csproj"
+              },
+              "D:\\DevHomeRepos\\Taiib-Prokop\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "D:\\DevHomeRepos\\Taiib-Prokop\\DataAccessLayer\\DataAccessLayer.csproj"
+              },
+              "D:\\DevHomeRepos\\Taiib-Prokop\\WebApiModels\\WebApiModels.csproj": {
+                "projectPath": "D:\\DevHomeRepos\\Taiib-Prokop\\WebApiModels\\WebApiModels.csproj"
               }
             }
           }

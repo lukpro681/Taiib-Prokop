@@ -2,103 +2,72 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using BLL;
+using BLL_EF;
+using BLL.DTO.product;
 
 namespace WebAPI.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
-    public class ProductController : Controller
+    [Route("/api/[controller]")]
+    public class ProductController : ControllerBase
     {
-        private readonly IProductService _productService;
+        readonly ProductService _productService;
+        readonly ProductGetImpl _productsFiltersCriteria;
 
-        public ProductController(IProductService productService) 
-        { 
-            _productService = productService;
+        public ProductController(ProductService interakcjaZProduktem, ProductGetImpl productFilterCriteria)
+        {
+            this._productService = interakcjaZProduktem;
+            this._productsFiltersCriteria = productFilterCriteria;
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddProduct(ProductDTO product)
+        [Route("/{state}")]
+        public bool activate([FromQuery] ProductRequestDTO id, bool state)
         {
-            try
-            {
-                await _productService.AddProduct(product);
-                return Ok("Product added successfully."); //OK oznacza wygenerowanie kodu 200 oraz pokazaniu wyniku operacji
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"Error adding product: {ex.Message}"); //błąd 400 BadRequest
-            }
+            return _productService.Activate(id, state);
+        }
+        [HttpPost]
+        [Route("/product/add")]
+        public bool add([FromQuery] ProductResponseDTO product)
+        {
+            return _productService.add(product);
+        }
+        [HttpPost]
+        public bool edit([FromQuery] ProductRequestDTO product, [FromQuery] ProductResponseDTO productResponseDTO)
+        {
+
+            return _productService.edit(product, productResponseDTO);
+        }
+        [HttpDelete]
+        public bool remove([FromQuery] ProductRequestDTO id)
+        {
+            return _productService.remove(id);
+        }
+        [HttpGet]
+        [Route("/asc/{ascending}")]
+        public IEnumerable<ProductResponseDTO> get([FromRoute] bool ascending)
+        {
+            return _productsFiltersCriteria.get(ascending);
+        }
+        [HttpGet]
+        [Route("/name/{name}")]
+        public IEnumerable<ProductResponseDTO> gegetPoNazwiet([FromRoute] string name)
+        {
+            return _productsFiltersCriteria.getPoNazwie(name);
+        }
+        [HttpGet]
+        [Route("/strona/{strona}")]
+        public IEnumerable<ProductResponseDTO> getStronnicowo([FromRoute] int strona)
+        {
+            return _productsFiltersCriteria.getStronnicowo(strona);
+        }
+        [HttpGet]
+        [Route("/state/{state}")]
+        public IEnumerable<ProductResponseDTO> getactive([FromRoute] bool state)
+        {
+            return _productsFiltersCriteria.getactive(state);
         }
 
-        [HttpPut("{productId}")]
-        public async Task<IActionResult> EditProduct(int productId, ProductDTO product)
-        {
-            try
-            {
-                // Sprawdzenie czy podane ID jest identyczne jak w DTO
-                if (productId != product.Id)
-                {
-                    return BadRequest("Product ID mismatch.");
-                }
-
-                await _productService.EditProduct(product);
-                return Ok("Product updated successfully.");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"Error updating product: {ex.Message}");
-            }
-        }
-
-        [HttpDelete("{productId}")]
-        public async Task<IActionResult> DeleteProduct(int productId)
-        {
-            try
-            {
-                await _productService.DeleteProduct(productId);
-                return Ok("Product deleted successfully.");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"Error deleting product: {ex.Message}");
-            }
-        }
-
-        [HttpGet("{productId}")]
-        public async Task<IActionResult> GetProduct(int productId)
-        {
-            try
-            {
-                // Tworzenie obiektu ProductFilterCriteria z podanym productId
-                var filterCriteria = new ProductFilterCriteria
-                {
-                    Name = null, // domyślnie Nie stosujemy filtra na nazwę
-                    IsActive = null, // domyślnie Nie stosujemy filtra na aktywność
-                    PageNumber = 1, // domyślnie Pobieramy tylko pierwszą stronę wyników
-                    PageSize = 1, // domyślnie Pobieramy tylko jeden produkt
-                    SortBy = null, // domyślnie niestandardowe sortowanie wyłączone
-                    IsSortAscending = true // domyślnie sortowanie rosnąco
-                };
-
-                var products = await _productService.GetProductsAsync(filterCriteria);
-                var product = products.FirstOrDefault(p => p.Id == productId); // Znajdujemy produkt o podanym Id
-
-                if (product == null)
-                {
-                    return NotFound("Product not found."); //błąd 404
-                }
-
-                return Ok(product);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"Error retrieving product: {ex.Message}");
-            }
-        }
-
-/*        public IActionResult Index()
-        {
-            return View();
-        }*/
     }
 }
+

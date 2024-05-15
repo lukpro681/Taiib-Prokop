@@ -1187,8 +1187,10 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "BLL": "1.0.0",
+          "DataAccessLayer": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.17",
-          "Microsoft.EntityFrameworkCore.Relational": "7.0.17"
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.17",
+          "WebApiModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/BLL_EF.dll": {}

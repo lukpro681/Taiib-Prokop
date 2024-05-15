@@ -5,19 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { OrdersComponent } from './orders/orders.component';
-import { AllOrdersComponent } from './all-orders/all-orders.component';
 import { BasketComponent } from './basket/basket.component';
+import { AllOrdersComponent } from './all-orders/all-orders.component';
+import { NavigationBarComponent} from './navigation-bar/navigation-bar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
     OrdersComponent,
+    BasketComponent,
     AllOrdersComponent,
-    BasketComponent
+    NavigationBarComponent,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

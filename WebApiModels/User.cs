@@ -1,37 +1,23 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace WebApiModels
 {
-
-    public enum Type
+    public class User
     {
-        Admin,
-        Casual
-    }
-
-    public class User : IEntityTypeConfiguration<User>
-    {
-        public int ID { get; set; }
-
-        public required string Login { get; set; }
-        public required string Password { get; set; }
-        public required Type Type { get; set; }
-        public required bool IsActive { get; set; }
-        public IEnumerable<BasketPosition> BasketPositions { get; set; }
-        public IEnumerable<Order> Orders { get; set; }
-
-        public void Configure(EntityTypeBuilder<User> builder)
+       public enum Level
         {
-            builder
-                .HasMany(x => x.BasketPositions)
-                .WithOne(x => x.User)
-                .OnDelete(DeleteBehavior.Cascade);
-            builder
-                .HasMany(x => x.Orders)
-                .WithOne(x => x.User)
-                .OnDelete(DeleteBehavior.Cascade);
+            Admin,
+            Casual
         }
+        [Key]
+        public int Id { get; set; }
+        [MaxLength(50)]
+        public string Login { get; set; }
+        [MaxLength(20)]
+        public string Password { get; set; }
+        public Level Type { get; set; }
+        public bool IsActive { get; set; }
+        public IEnumerable<BasketPosition>? basketPositions { get; set; }
+        public IEnumerable<Order>? orders { get;}
     }
 }

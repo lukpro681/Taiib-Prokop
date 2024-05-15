@@ -16,3 +16,7 @@ D:\DevHomeRepos\Taiib-Prokop\BLL_EF\obj\Debug\net7.0\refint\BLL_EF.dll
 D:\DevHomeRepos\Taiib-Prokop\BLL_EF\obj\Debug\net7.0\BLL_EF.pdb
 D:\DevHomeRepos\Taiib-Prokop\BLL_EF\obj\Debug\net7.0\BLL_EF.genruntimeconfig.cache
 D:\DevHomeRepos\Taiib-Prokop\BLL_EF\obj\Debug\net7.0\ref\BLL_EF.dll
+D:\DevHomeRepos\Taiib-Prokop\BLL_EF\bin\Debug\net7.0\DataAccessLayer.dll
+D:\DevHomeRepos\Taiib-Prokop\BLL_EF\bin\Debug\net7.0\WebApiModels.dll
+D:\DevHomeRepos\Taiib-Prokop\BLL_EF\bin\Debug\net7.0\DataAccessLayer.pdb
+D:\DevHomeRepos\Taiib-Prokop\BLL_EF\bin\Debug\net7.0\WebApiModels.pdb

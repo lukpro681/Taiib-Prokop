@@ -1,23 +1,18 @@
+
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-
-// Import komponentów, które będą używane w nawigacji
-import { ProductsComponent } from './products/products.component';
+import { RouterModule, Routes } from '@angular/router';
 import { OrdersComponent } from './orders/orders.component';
-import { AllOrdersComponent } from './all-orders/all-orders.component';
 import { BasketComponent } from './basket/basket.component';
+import { ProductsComponent } from './products/products.component';
+import { AllOrdersComponent } from './all-orders/all-orders.component'; // Import AllOrdersComponent
 
-// Zdefiniuj ścieżki dla każdej podstrony
 const routes: Routes = [
-  { path: 'products', component: ProductsComponent },
   { path: 'orders', component: OrdersComponent },
-  { path: 'orders/all', component: AllOrdersComponent },
+  { path: 'orders/all', component: AllOrdersComponent }, // This is your all orders route
   { path: 'basket', component: BasketComponent },
-  // Dodaj dodatkowe ścieżki, jeśli to konieczne
-  { path: '', redirectTo: '/products', pathMatch: 'full' }, // Domyślna ścieżka
-  { path: '**', redirectTo: '/products', pathMatch: 'full' } // Obsługa nieznanych ścieżek
+  { path: 'products', component: ProductsComponent },
+  { path: '', redirectTo: '/products', pathMatch: 'full' }
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

@@ -1,11 +1,11 @@
 ﻿using BLL;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebAPI.Controllers
-{
-    [ApiController]
-    [Route("api/[controller]")]
-    public class OrderController : ControllerBase
+//namespace WebAPI.Controllers
+//{
+    /*[ApiController]
+    [Route("api/[controller]")]*/
+  /*  public class OrderController : ControllerBase
     {
         private readonly IOrderService _orderService;
 
@@ -86,11 +86,12 @@ namespace WebAPI.Controllers
             {
                 return BadRequest($"Error retrieving order positions: {ex.Message}");
             }
-        }
+        }*/
 /*        public IActionResult Index()
         {
             return View();
-        }*/
+        }
     }
 
 }
+*/

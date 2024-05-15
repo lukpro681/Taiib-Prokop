@@ -1,109 +1,66 @@
 ﻿using System;
 using System.Collections.Generic;
 using BLL;
+using BLL.DTO.product;
+using BLL.Interface;
+using DataAccessLayer;
+using WebApiModels;
 
 namespace BLL_EF
 {
-    public class ProductService : IProductService
+    public class ProductService : AddProduct, ActivateProduct, EditProduct, RemoveProduct
+
     {
-        private List<ProductDTO> _products = new List<ProductDTO>();
-        public Task ActivateProduct(ProductDTO product)
+        ShopContext context = new ShopContext();
+        public bool Activate(ProductRequestDTO id, bool state = true)
         {
-            if (product.IsActive)
-            {
-                throw new InvalidOperationException("Product is already active.");
-            }
+            var product = context.Products.First(x => x.Id == id.ProductID);
+            if (product.IsActive == state) return false;
+            product.IsActive = state;
+            context.SaveChanges();
+            return true;
 
-            product.IsActive = true;
-            // aktywacja produktu
-            return Task.CompletedTask;
         }
 
-        public Task DeleteProduct(int productId)
+        public bool add(ProductResponseDTO product)
         {
-            // Jeśli produkt jest powiązany z pozycją nieopłaconego zamówienia lub koszyka, nie możemy go usunąć ani zdezaktywować
-            if (_products.Any(p => p.Id == productId))
-            {
-                throw new InvalidOperationException("Product cannot be deleted because it is associated with an unpaid order or basket.");
-            }
-
-            // Jeśli produkt jest powiązany z pozycją zamówienia, dezaktywujemy go
-            var product = _products.FirstOrDefault(p => p.Id == productId);
-            if (product != null)
-            {
-                product.IsActive = false;
-            }
-
-            return Task.CompletedTask;
+            if (product.Price <= 0) return false;
+            var prdukt = new Product { Image = product.Image, IsActive = product.IsActive, Name = product.Name, Price = product.Price };
+            context.Products.Add(prdukt);
+            context.SaveChanges();
+            return true;
         }
 
-        public Task EditProduct(ProductDTO product)
+        public bool edit(ProductRequestDTO id, ProductResponseDTO product)
         {
-            // Jeżeli cena jest mniejsza od 0 wygeneruj błąd 400 BadRequest
-            if (product.Price <= 0)
-            {
-                throw new ArgumentException("Price must be greater than 0 PLN.");
-            }
-
-            var existingProduct = _products.FirstOrDefault(p => p.Id == product.Id);
-            if (existingProduct != null)
-            {
-                existingProduct.Name = product.Name;
-                existingProduct.Price = product.Price;
-                existingProduct.Image = product.Image;
-                existingProduct.IsActive = product.IsActive;
-            }
-            // Jeżeli produkt nie jest znaleziony, wygeneruj błąd 404
-            else
-            {
-                throw new InvalidOperationException("Product not found.");
-            }
-            // status 200 (OK)
-            return Task.CompletedTask;
+            if (product.Price <= 0) return false;
+            var produkt = context.Products.First(x => x.Id == id.ProductID);
+            produkt.IsActive = product.IsActive;
+            produkt.Name = product.Name;
+            produkt.Price = product.Price;
+            produkt.Image = product.Image;
+            context.SaveChanges();
+            return true;
         }
 
-        public Task<IEnumerable<ProductDTO>> GetProductsAsync(ProductFilterCriteria criteria)
+        public bool remove(ProductRequestDTO product)
         {
-            // pobieranie produktów zgodnie z kryteriami filtrowania
-            IEnumerable<ProductDTO> filteredProducts = _products;
-
-            if (!string.IsNullOrEmpty(criteria.Name))
+            var produkt = context.Products.First(x => x.Id == product.ProductID);
+            var Order = context.Orders.Where(x => x.OrderPositions == context.OrderPositions.Where(x => x.ProductID == product.ProductID));
+            foreach (var order in Order)
+                if (order.isPaid != true)
+                    return false;
+            var BasketPosition = context.BasketPositions;
+            if (BasketPosition.Any(x => x.ProductID == product.ProductID)) return false;
+            if (Order.Any())
             {
-                filteredProducts = filteredProducts.Where(p => p.Name.Contains(criteria.Name, StringComparison.OrdinalIgnoreCase));
+                Activate(product, false);
+                return false;
             }
+            context.Products.Remove(produkt);
+            context.SaveChanges();
+            return true;
 
-            if (criteria.IsActive.HasValue)
-            {
-                filteredProducts = filteredProducts.Where(p => p.IsActive == criteria.IsActive.Value);
-            }
-
-            // Sortowanie
-            switch (criteria.SortBy)
-            {
-                case "Price":
-                    filteredProducts = criteria.IsSortAscending ? filteredProducts.OrderBy(p => p.Price) : filteredProducts.OrderByDescending(p => p.Price);
-                    break;
-                default:
-                    filteredProducts = filteredProducts.OrderBy(p => p.Id); // Domyślne sortowanie po Id
-                    break;
-            }
-
-            // Paginacja
-            filteredProducts = filteredProducts.Skip((criteria.PageNumber - 1) * criteria.PageSize).Take(criteria.PageSize);
-
-            return Task.FromResult(filteredProducts);
         }
-
-        Task IProductService.AddProduct(ProductDTO product)
-        {
-            if (product.Price <= 0)
-            {
-                throw new ArgumentException("Price must be greater than 0.");
-            }
-
-            _products.Add(product);
-            return Task.CompletedTask;
-        }
-
     }
 }

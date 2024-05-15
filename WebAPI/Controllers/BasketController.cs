@@ -1,77 +1,44 @@
 ﻿using BLL;
+using BLL.DTO.BasketPosition;
+using BLL.DTO.product;
+using BLL.DTO.User;
 using Microsoft.AspNetCore.Mvc;
+using BLL_EF;
 
 namespace WebAPI.Controllers
 {
+
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("/api/[controller]")]
     public class BasketController : ControllerBase
     {
-        private readonly IBasketService _basketService;
-
-        public BasketController(IBasketService basketService)
+        readonly BasketService _basketService;
+        public BasketController(BasketService interakcjaZKoszykiem)
         {
-            _basketService = basketService;
+            this._basketService = interakcjaZKoszykiem;
         }
-
-        [HttpPost("{userId}/add/{productId}")]
-        public async Task<IActionResult> AddProductToBasket(int userId, int productId, int amount)
+        [HttpPost]
+        [Route("/add")]
+        public bool Post([FromQuery] ProductRequestDTO id, [FromQuery] UserRequestDTO user)
         {
-            try
-            {
-                await _basketService.AddProduct(userId, productId, amount);
-                return Ok("Product added to basket successfully.");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"Error adding product to basket: {ex.Message}");
-            }
+            return _basketService.AddToBasket(id, user);
         }
-
-        [HttpPut("{userId}/edit/{productId}")]
-        public async Task<IActionResult> EditProductAmountInBasket(int userId, int productId, int amount)
+        [HttpPut]
+        [Route("/change/{amount}")]
+        public bool Change([FromQuery] ProductRequestDTO id, [FromQuery] UserRequestDTO user, [FromRoute] int amount)
         {
-            try
-            {
-                await _basketService.EditProductAmount(userId, productId, amount);
-                return Ok("Product amount in basket updated successfully.");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"Error editing product amount in basket: {ex.Message}");
-            }
+            return _basketService.ChangeAmount(id, user, amount);
         }
+        [HttpGet]
 
-        [HttpGet("{userId}")]
-        public async Task<IActionResult> GetBasketContents(int userId)
+        public IEnumerable<BasketPositionResponseDTO> getuser(UserRequestDTO user)
         {
-            try
-            {
-                var basketContents = await _basketService.GetBasketContents(userId);
-                return Ok(basketContents);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"Error retrieving basket contents: {ex.Message}");
-            }
+            return _basketService.get(user);
         }
-
-        [HttpDelete("{userId}/remove/{productId}")]
-        public async Task<IActionResult> RemoveProductFromBasket(int userId, int productId)
+        [HttpDelete]
+        public bool remove([FromQuery] UserRequestDTO user, [FromQuery] ProductRequestDTO product)
         {
-            try
-            {
-                await _basketService.RemoveProduct(productId, userId);
-                return Ok("Product removed from basket successfully.");
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"Error removing product from basket: {ex.Message}");
-            }
+            return _basketService.RemoveFromBasket(product, user);
         }
-/*        public IActionResult Index()
-        {
-            return View();
-        }*/
     }
 }

@@ -1,66 +1,57 @@
-﻿using BLL;
+﻿using BLL.DTO.BasketPosition;
+using BLL.DTO.product;
+using BLL.DTO.User;
+using BLL.Interface;
+using WebApiModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataAccessLayer;
 
 namespace BLL_EF
 {
-    public class BasketService : IBasketService
+    public class BasketService : RemoveFromBasket, AddToBasket, ChangeAmountInBasket, GetBasketPositions
     {
-        private List<BasketPositionDTO> _basketContents = new List<BasketPositionDTO>();
-        private readonly IProductService _productService;
-
-        public BasketService(IProductService productService)
+        private ShopContext context = new ShopContext();
+        public bool AddToBasket(ProductRequestDTO id, UserRequestDTO user)
         {
-            _productService = productService;
+            var product = context.Products.First(x => x.Id == id.ProductID);
+            if (!product.IsActive) return false;
+            var pos = new BasketPosition { Amount = 1, Product = context.Products.First(x => x.Id == id.ProductID), User = context.Users.First(x => x.Password == user.Password && x.Login == user.login) };
+            context.BasketPositions.Add(pos);
+            context.SaveChanges();
+            return true;
+
         }
 
-        public async Task AddProduct(int userId, int productId, int amount)
+        public bool ChangeAmount(ProductRequestDTO id, UserRequestDTO user, int amount)
         {
-            // Sprawdzenie czy produkt istnieje
-            var product = (await _productService.GetProductsAsync(new ProductFilterCriteria { IsActive = true })).FirstOrDefault(p => p.Id == productId);
-            if (product == null)
-            {
-                throw new InvalidOperationException("Product not found or is inactive.");
-            }
-
-            _basketContents.Add(new BasketPositionDTO { UserID = userId, ProductID = productId, Amount = amount });
+            if (amount <= 0) return false;
+            var users = context.Users.First(x => x.Password == user.Password && x.Login == user.login);
+            var pos = context.BasketPositions.First(x => x.ProductID == id.ProductID && x.UserID == users.Id);
+            pos.Amount = amount;
+            context.SaveChanges();
+            return true;
         }
 
-        public async Task EditProductAmount(int userId, int productId, int amount)
+        public IEnumerable<BasketPositionResponseDTO> get(UserRequestDTO user)
         {
-            if (amount <= 0)
-            {
-                throw new ArgumentException("Amount must be greater than 0.");
-            }
+            var us = context.Users.First(x => x.Password == user.Password && x.Login == user.login);
+            var pos = context.BasketPositions.Where(x => x.User == us);
 
-            var basketPosition = _basketContents.FirstOrDefault(b => b.UserID == userId && b.ProductID == productId);
-            if (basketPosition != null)
-            {
-                basketPosition.Amount = amount;
-            }
-            else
-            {
-                throw new InvalidOperationException("Basket position not found.");
-            }
+            var list = pos.Select(pos => new BasketPositionResponseDTO { Amount = pos.Amount, Product = new ProductResponseDTO { ID = pos.ProductID, Image = pos.Product.Image, IsActive = pos.Product.IsActive, Name = pos.Product.Name, Price = pos.Product.Price } }).ToList();
+            return list;
         }
 
-        public Task<IEnumerable<BasketPositionDTO>> GetBasketContents(int userId)
+        public bool RemoveFromBasket(ProductRequestDTO product, UserRequestDTO user)
         {
-            return Task.FromResult(_basketContents.Where(b => b.UserID == userId).AsEnumerable());
-        }
-
-        public Task RemoveProduct(int productId, int userId)
-        {
-            _basketContents.RemoveAll(b => b.UserID == userId && b.ProductID == productId);
-            return Task.CompletedTask;
-        }
-        public Task RemoveAllProducts(int userId)
-        {
-            _basketContents.RemoveAll(b => b.UserID == userId);
-            return Task.CompletedTask;
+            var users = context.Users.First(x => x.Password == user.Password && x.Login == user.login);
+            var pos = context.BasketPositions.First(x => x.ProductID == product.ProductID && x.UserID == users.Id);
+            context.BasketPositions.Remove(pos);
+            context.SaveChanges();
+            return true;
         }
     }
 }
