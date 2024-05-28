@@ -10,11 +10,11 @@ import { ProductDTO } from '../models/productDTO';
 })
 export class ProductService {
 
-  private apiUrl = '/api/products';
+  private apiUrl = 'https://localhost:7206/api/products';
 
   constructor(private http: HttpClient) { }
 
-  getProducts(ascending: boolean): Observable<ProductDTO[]> {
-    return this.http.get<ProductDTO[]>(`${this.apiUrl}/${ascending}`);
+  getProducts(): Observable<ProductDTO[]> {
+    return this.http.get<ProductDTO[]>(`${this.apiUrl}`);
   }
 }

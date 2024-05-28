@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../products.service';
+import { ProductDTO } from '../../models/productDTO';
 
 @Component({
   selector: 'app-products',
@@ -12,6 +13,7 @@ export class ProductsComponent{
   public price: number = 0.00;
   public image: string = "";
   public isActive: boolean = false;
+  public data: ProductDTO[] = [];
 
   constructor(private productService: ProductService) {
     this.loadData();
@@ -19,13 +21,13 @@ export class ProductsComponent{
 
   private loadData() : void {
     {
-      // this.productService.getProducts().subscribe({
-      //   next: (res) => {
-      //     res;
-      //   },
-      //   error: (err) => console.error(err),
-      //   complete: () => console.log('complete')
-      // });
+      this.productService.getProducts().subscribe({
+        next: (res) => {
+          this.data = res;
+        },
+        error: (err) => console.error(err),
+        complete: () => console.log('complete')
+      });
     }
   }
 }
